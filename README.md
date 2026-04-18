@@ -124,7 +124,7 @@ int main() {
 ## ⚙️ Windows 빌드 주의사항
 
 - `ws2_32.lib` **링크하지 마세요** (이미 내부에서 순수 C++ `psutil_inet_ntop`으로 대체)
-- 필요한 라이브러리: `psapi`, `iphlpapi`, `pdh`
+- 필요한 라이브러리: `psapi`, `iphlpapi`
 
 ---
 
@@ -146,5 +146,6 @@ int main() {
 
 **Made with ❤️ in Seoul**  
 C++로 psutil을 쓰고 싶었던 모든 개발자들을 위해.
-```
 
+---
+**This file writed by Grok**
