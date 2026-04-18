@@ -60,12 +60,13 @@ int main() {
 2. `#include "psutil.hpp"` 만 추가
 3. **Windows** 링커 설정:
    ```cmake
-   target_link_libraries(your_target PRIVATE psapi iphlpapi pdh)
-   # ws2_32.lib는 더 이상 필요 없습니다!
+   target_link_libraries(your_target PRIVATE psapi iphlpapi)
    ```
 
-**MinGW / Clang** 사용자도 동일하게 `psapi iphlpapi pdh`만 링크하면 됩니다.
-
+**MinGW / Clang** 사용자도 동일하게 `psapi iphlpapi`만 링크하면 됩니다.
+```bash
+g++ -std=c++17 -O2 demo.cpp -o demo.exe -lpsapi -liphlpapi
+```
 ---
 
 ## 📋 지원 API (Python psutil과 거의 동일)
